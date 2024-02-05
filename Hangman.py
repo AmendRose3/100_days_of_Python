@@ -1,4 +1,22 @@
+
 import random
+import words
+
+logo = ''' 
+ _                                             
+| |                                            
+| |__   __ _ _ __   __ _ _ __ ___   __ _ _ __  
+| '_ \ / _` | '_ \ / _` | '_ ` _ \ / _` | '_ \ 
+| | | | (_| | | | | (_| | | | | | | (_| | | | |
+|_| |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|
+                    __/ |                      
+                   |___/    '''
+print(logo)
+                                                                    
+                                                                       
+
+
+
 
 stages = ['''
   +---+
@@ -58,12 +76,12 @@ stages = ['''
 ''']
 
 
-word_list = ["aardvark", "baboon", "camel","Crow","Peakcock"]
+chosen_word  = random.choice(words.word_list)
 display = []
 life=6
 
 print(f"Total Life: {life}")
-chosen_word = random.choice(word_list)
+
 #print(chosen_word)
 
 word_len = len(chosen_word)
